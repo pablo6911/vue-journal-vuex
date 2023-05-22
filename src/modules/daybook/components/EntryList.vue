@@ -5,8 +5,9 @@
     </div>
     <div class="entry-scrollarea">
         <Entry
-            v-for="item in entriesByterm"
-            :key="item"
+            v-for="entry in entriesByterm"
+            :key="entry.id"
+            :entry="entry"
         />
     </div>
   </div>
