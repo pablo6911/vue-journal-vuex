@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar bg-primary">
-    <a class="navbar-brand text-white">
+    <a class="navbar-brand text-white btn" @click="gotoHome">
         <img src="@/assets/logo.png" 
             alt="Vue Logo"
             height="24"
@@ -18,9 +18,10 @@
 <script>
 export default {
     name: 'Navbar-Vue',
+    methods: {
+      gotoHome(){
+        this.$router.push({name: 'home'})
+      }
+    }
 }
 </script>
-
-<style>
-
-</style>

@@ -8,10 +8,11 @@
     <div>
       <button class="btn btn-danger mx-2">
         Borrar
-        <i class="fa fa-trsh-alt"></i>
+        <i class="fa fa-trash-alt"></i>
       </button>
-      <button>
-        Subir Foto
+
+      <button class="btn btn-primary">
+        Subir foto
         <i class="fa fa-upload"></i>
       </button>
     </div>
@@ -20,9 +21,7 @@
   <div class="d-flex flex-column px-3 h-75">
     <textarea placeholder="¿Que sucedio Hoy?"> </textarea>
   </div>
-  <Fab 
-    icon="fa-save"
-  />
+  <Fab icon="fa-save" />
   <img
     src="https://tumbaabierta.com/wp-content/uploads/2012/11/wallpaper_hd_the_wolverine-1920x1200_v2_HD.jpg"
     alt="entry-picture"
@@ -39,21 +38,21 @@ export default {
 };
 </script>
 
-<style  lang="scss" scoped>
+<style lang="scss" scoped>
 textarea {
-    border: none;
-    font-size: 20px ;
-    height: 100%;
+  border: none;
+  font-size: 20px;
+  height: 100%;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 img {
-    bottom: 150px;
-    box-shadow: opx 5px 10px rgb($color: #000000, $alpha: 0.2);
-    position: fixed;
-    right: 20px;
-    width: 200px;
+  bottom: 150px;
+  box-shadow: opx 5px 10px rgb($color: #000000, $alpha: 0.2);
+  position: fixed;
+  right: 20px;
+  width: 200px;
 }
 </style>

@@ -22,9 +22,9 @@ export default {
 button{
     border-radius: 100%;
     bottom: 28px;
-    height: 80px;
+    height: 70px;
     position: fixed;
     right: 20px;
-    width: 80px;
+    width: 70px;
 }
 </style>
