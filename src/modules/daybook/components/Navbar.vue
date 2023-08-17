@@ -1,0 +1,29 @@
+<template>
+  <nav class="navbar bg-primary">
+    <a class="navbar-brand pointer text-white" @click="gotoHome">
+      <img
+        src="@/assets/logo.png"
+        alt="Vue Logo"
+        height="24"
+        class="d-inline-block align-text-top mx-2"
+      />
+      Daybook
+    </a>
+    <div class="d-flex">
+      <button class="btn btn-outline-info mx-2">
+        <i class="fa fa-sign-out-alt"></i>
+      </button>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "NavbarVue",
+  methods: {
+    gotoHome() {
+      this.$router.push({ name: "home" });
+    },
+  },
+};
+</script>
